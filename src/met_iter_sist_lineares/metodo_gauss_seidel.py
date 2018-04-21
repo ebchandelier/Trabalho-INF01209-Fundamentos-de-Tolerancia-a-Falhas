@@ -22,6 +22,8 @@ def gauss_seidel(A, b, x0, N):
         # prepara nova iteracao
         x0 = np.copy(x)
 
+    print(x)
+
 
 def main():
     A = np.array([
@@ -45,7 +47,7 @@ def main():
         [-1]
     ])
 
-    N = 100
+    N = 1000
 
     gauss_seidel(A, b, x0, N)
 
