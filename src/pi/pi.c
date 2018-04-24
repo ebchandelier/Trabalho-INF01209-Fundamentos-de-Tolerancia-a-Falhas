@@ -1,8 +1,7 @@
 #include<stdio.h>
 
-#define TAM 5000000
+#define TAM 100000
 
-FILE *file;
 
 double signal(double n) {
     
@@ -15,18 +14,27 @@ double signal(double n) {
 
 int main(int argc, char *argv[]) {
     
-    static double pi = 0.0;
+    FILE *file = fopen(argv[1], "w+");
     
-    file = fopen(argv[1], "w+");
-    
+    fprintf(file, "%1.70f", 0.0);
+    fclose(file);
+
     for(double n =0.0; n<TAM; n++) {
         
-        pi += signal(n) /  (2*n+1);    
+        double readPi;
+
+        file = fopen(argv[1], "w+");
+
+        fscanf(file, "%1.70f", &readPi);
+
+        readPi += signal(n) /  (2*n+1);    
         
-        fprintf(file, "%1.70f...\n", pi*4);
+        // readPi * 4 = 3.1415....
+        fprintf(file, "%1.70f", readPi);
+
+
+        fclose(file);
     }
-    
-    fclose(file);
 
     return 0;
 }
