@@ -11,7 +11,7 @@ move_to_tmp: generate_gold_output
 
 generate_gold_output: compile
 	# chmod 777 pi.py
-	# ./pi.py gold
+	# python pi.py gold
 	./pi gold
 
 compile:
