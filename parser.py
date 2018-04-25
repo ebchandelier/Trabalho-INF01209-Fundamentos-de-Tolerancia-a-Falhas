@@ -1,5 +1,6 @@
 import os
 from collections import namedtuple
+import sys
 
 
 def parse_errors(program_logs_folder_path, output_csv_file_path):
@@ -52,3 +53,19 @@ def parse_errors(program_logs_folder_path, output_csv_file_path):
             n_sdcs = len(sdcs_list)
             out_file.write(sdc.name + "," + sdc.filename + "," +
                            sdc.line_number + "," + str(n_sdcs) + "\n")
+
+
+def main():
+    if(len(sys.argv) != 3):
+        raise Exception(
+            str("\n\nInvalid arguments: expected 2, received " +
+                str(len(sys.argv) - 1) + "\n\n" +
+                "Arg. 1: path of the folder containing the folders hangs, "
+                "masked and sdcs.\n" +
+                "Arg. 2: output csv file name\n\n"))
+
+    parse_errors(sys.argv[1], sys.argv[2])
+
+
+if __name__ == "__main__":
+    main()
