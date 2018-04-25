@@ -16,8 +16,9 @@ def gauss_seidel(A, b, x0, N):
         # iteracao de Gauss Seidel
         for i in np.arange(n):
             x[i] = b[i]
-            for j in np.concatenate((np.arange(0, i), np.arange(i + 1, n))):
-                x[i] -= A[i, j] * x[j]
+            for j in np.arange(n):#np.concatenate((np.arange(0, i), np.arange(i + 1, n))):
+                if j != i:
+                    x[i] -= A[i, j] * x[j]
             x[i] /= A[i, i]
         # prepara nova iteracao
         x0 = np.copy(x)
