@@ -16,38 +16,6 @@ typedef struct obj {
     double mass;
 } PLANET;
 
-// double sqrt(double a) {
-
-//     // if(a < 1)  return 1.0;
-
-
-
-//     // std::cout << a << "\n";
-
-//     return a;
-// }
-
-// double pow(double x, int y) {
-
-//     double result = 1.0;
-//     if(y >0) {
-
-//         for(int i=0; i<y; i++) {
-
-//             result = result * x;
-//         }
-//     }
-
-//     if(y < 0) {
-
-//         for(int i=0; i<y; i++) {
-
-//             result = result / x;
-//         }
-//     }
-//     return result;
-// }
-
 void printPlanet(PLANET planet) {
     printf("x: %.50f\n", planet.pos_x);
     printf("y: %.50f\n", planet.pos_y);
@@ -158,7 +126,7 @@ int main(int argc, char *argv[]) {
     f.mass = 100;
 
     FILE* file = fopen(argv[1], "w+");
-    for(int i = 0 ; i < 300000; i++) {
+    for(int i = 0 ; i < 2500000; i++) {
         move(&a, b);
         move(&a, c);
         move(&a, d);
@@ -196,14 +164,14 @@ int main(int argc, char *argv[]) {
         move(&f, d);
         move(&f, e);
 
-        write(file, a);
-        write(file, b);
-        write(file, c);
-        write(file, d);
-        write(file, e);
-        write(file, f);
     }
 
+    write(file, a);
+    write(file, b);
+    write(file, c);
+    write(file, d);
+    write(file, e);
+    write(file, f);
 
 
 
