@@ -12,9 +12,14 @@ int main(int argc, char *argv[]) {
 
   double A[4][4] = {-1, 0, 0, 1, 4, 10, -3, 2, 2, 0, 5, -3, 4, 1, 0, 6};//[-1 0 0 1,4 10 -3 2,2 0 5 -3;4 1 0 6];
   double b[4][1] = {{-2}, {5}, {11}, {7}};
-  double x[4][1] = {-1, 1, -1, -1};
-  int N = 100000000;
+  
+  int N = 100;
   int n = sizeof(A[0]) / sizeof(A[0][0]);
+
+file = fopen(argv[1], "w+");
+
+for(int turn = 0; turn != 1000000; ++turn) {
+	double x[4][1] = {-1, 1, -1, -1};
   int iter = 0;
     while (iter < N) {
       iter += 1;
@@ -28,11 +33,12 @@ int main(int argc, char *argv[]) {
         x[i][0] /= (A[i][i]);
       }
     }
-    file = fopen(argv[1], "w+");
+    
     for(int k=0;k<4;k++) {
       fprintf(file, "%1.70f ", x[k][0]);
       fprintf(file, "\n");
     }
+}
 
   return 0;
 }
