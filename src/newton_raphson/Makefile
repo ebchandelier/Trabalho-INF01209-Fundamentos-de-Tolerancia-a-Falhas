@@ -1,5 +1,5 @@
 CC = g++
-CC_FLAGS = -Wall -Wextra -Werror -g
+CC_FLAGS = -Wall -Wextra -Werror -g -std=c++17
 
 destDir = /tmp/newton_raphson
 
