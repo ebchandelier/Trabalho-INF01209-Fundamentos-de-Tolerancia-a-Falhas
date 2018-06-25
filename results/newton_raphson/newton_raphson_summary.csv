@@ -1,0 +1,60 @@
+bitflips:;4387
+Total SDCs:;793
+Detected SDCs:;0
+Crashes:;145
+Simultaneous SDCs and Crashes:;0
+
+FaultModels Undetected SDCs:
+FaultModel ;#SDCs; percentage
+Random bit-flip;793;100.0
+
+FaultModels Detected SDCs:
+FaultModel ;#SDCs Detected; percentage
+
+FaultModels Crashes:
+FaultModel ;#Crashes; percentage
+Random bit-flip;145;18.28499369482976
+
+Variables that caused Undetected SDCs:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+78.91156462585033;147;116;x0;newton_raphson.cpp;32
+81.13207547169812;106;86;f;newton_raphson.hpp;34
+80.19801980198021;101;81;h;newton_raphson.hpp;36
+100.0;65;65;h;newton_raphson.hpp;47
+100.0;61;61;f;newton_raphson.hpp;44
+100.0;59;59;x;newton_raphson.hpp;50
+100.0;56;56;fDiff;newton_raphson.hpp;45
+53.333333333333336;90;48;x;newton_raphson.hpp;35
+70.0;60;42;currIter;newton_raphson.hpp;55
+76.47058823529412;51;39;found_root;newton_raphson.hpp;54
+73.07692307692307;52;38;df_x_too_small;newton_raphson.hpp;53
+56.451612903225815;62;35;f_x;newton_raphson.hpp;51
+23.214285714285715;56;13;delta;newton_raphson.hpp;46
+100.0;11;11;sn;../sysdeps/ieee754/dbl-64/s_sin.c;221
+5.405405405405405;185;10;x;newton_raphson.cpp;10
+19.51219512195122;41;8;eps;newton_raphson.hpp;46
+13.559322033898304;59;8;df_x;newton_raphson.hpp;58
+14.814814814814813;27;4;__x;/usr/include/c++/7/bits/std_abs.h;70
+2.7522935779816518;109;3;user_entry;../elf/dl-sysdep.c;91
+100.0;3;3;sn;../sysdeps/ieee754/dbl-64/s_sin.c;247
+28.57142857142857;7;2;mxcsr;../sysdeps/i386/fpu/fenv_private.h;444
+1.0204081632653061;98;1;__GI__dl_argv;rtld.c;83
+1.1111111111111112;90;1;_dl_skip_args;rtld.c;84
+100.0;1;1;cs;../sysdeps/ieee754/dbl-64/s_sin.c;160
+100.0;1;1;cs;../sysdeps/ieee754/dbl-64/s_sin.c;247
+100.0;1;1;ccs;../sysdeps/ieee754/dbl-64/s_sin.c;247
+
+Variables that caused Detected SDCs:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+
+Variables that caused Crash:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+98.24561403508771;57;56;maxIter;newton_raphson.hpp;46
+21.08843537414966;147;31;x0;newton_raphson.cpp;32
+27.77777777777778;90;25;_dl_skip_args;rtld.c;84
+18.34862385321101;109;20;user_entry;../elf/dl-sysdep.c;91
+4.081632653061225;98;4;__GI__dl_argv;rtld.c;83
+4.819277108433735;83;4;_rtld_global;rtld.c;231
+3.061224489795918;98;3;_rtld_global_ro;rtld.c;259
+0.5291005291005291;189;1;PI;newton_raphson.cpp;13
+100.0;1;1;runp;dl-deps.c;162

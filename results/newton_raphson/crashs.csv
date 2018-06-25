@@ -1,0 +1,10 @@
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+98.24561403508771;57;56;maxIter;newton_raphson.hpp;46
+21.08843537414966;147;31;x0;newton_raphson.cpp;32
+27.77777777777778;90;25;_dl_skip_args;rtld.c;84
+18.34862385321101;109;20;user_entry;../elf/dl-sysdep.c;91
+4.081632653061225;98;4;__GI__dl_argv;rtld.c;83
+4.819277108433735;83;4;_rtld_global;rtld.c;231
+3.061224489795918;98;3;_rtld_global_ro;rtld.c;259
+0.5291005291005291;189;1;PI;newton_raphson.cpp;13
+100.0;1;1;runp;dl-deps.c;162
