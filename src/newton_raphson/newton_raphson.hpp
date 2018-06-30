@@ -61,7 +61,7 @@ TFloat newton_raphson(TFunc f, TFloat x0,
         {
             // Derivative is too small.
             df_x_too_small = true;
-            x = std::numeric_limits<TFloat>::signaling_NaN();
+            // x = std::numeric_limits<TFloat>::signaling_NaN();
         }
         else
         {

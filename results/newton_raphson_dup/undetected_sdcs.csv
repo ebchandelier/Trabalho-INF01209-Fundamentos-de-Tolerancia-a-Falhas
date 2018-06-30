@@ -1,0 +1,6 @@
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+1.8867924528301887;106;2;f;newton_raphson.hpp;34
+2.7777777777777777;72;2;fDiff;newton_raphson.hpp;45
+11.11111111111111;9;1;mxcsr;../sysdeps/i386/fpu/fenv_private.h;444
+1.4285714285714286;70;1;f;newton_raphson.hpp;44
+1.3333333333333335;75;1;results;newton_raphson_dup.cpp;28
