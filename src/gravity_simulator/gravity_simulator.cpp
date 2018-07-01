@@ -3,7 +3,6 @@
 // #include<time.h>
 // #include<unistd.h>
 #include<iostream>
-#include<vector>
 
 double G;
 
@@ -80,8 +79,9 @@ void write(FILE* file, PLANET b) {
     fprintf(file, "vy: %.50f\n", b.vel_y);
 }
 
-std::vector<PLANET> run() {
-
+int main(int argc, char *argv[]) {
+    
+    G = 6.674 * pow(10.0,-11.0);
 
     PLANET a;
     a.pos_x = 0.0;
@@ -125,6 +125,7 @@ std::vector<PLANET> run() {
     f.vel_y = 0.0;
     f.mass = 100;
 
+    FILE* file = fopen(argv[1], "w+");
     for(int i = 0 ; i < 2500000; i++) {
         move(&a, b);
         move(&a, c);
@@ -165,61 +166,12 @@ std::vector<PLANET> run() {
 
     }
 
-    std::vector<PLANET> result;
-    result.push_back(a);
-    result.push_back(b);
-    result.push_back(c);
-    result.push_back(d);
-    result.push_back(e);
-    result.push_back(f);
-
-    return result;
-}
-
-bool isEqual(std::vector<PLANET> firstRun, std::vector<PLANET> secondRun) {
-
-    if(firstRun.size() != secondRun.size()) return false;
-
-    for(int i=0; i<firstRun.size(); i++) {
-
-        PLANET a = firstRun.at(i);
-        PLANET b = secondRun.at(i);
-
-        if( a.mass  != b.mass  || a.pos_x != b.pos_x || a.pos_y != b.pos_y || a.vel_x != b.vel_x || a.vel_y != b.vel_y) {
-
-            return false;
-        }
-    }
-
-    return true;
-}
-
-int main(int argc, char *argv[]) {
-    
-    G = 6.674 * pow(10.0,-11.0);
-
-    std::vector<PLANET> firstRun = run();
-
-    std::vector<PLANET> secondRun = run();
-
-    FILE* file = fopen(argv[1], "w+");
-    if(isEqual(firstRun, secondRun)) {
-
-        write(file, firstRun.at(0));
-        write(file, firstRun.at(1));
-        write(file, firstRun.at(2));
-        write(file, firstRun.at(3));
-        write(file, firstRun.at(4));
-        write(file, firstRun.at(5));
-
-    } else {
-        printf("======SDC IDENTIFICADO=======\n");
-
-        FILE* detectedFile = fopen("/tmp/gravity_simulator-detection.log", "w+");
-        fprintf(file, "SDC");
-        fclose(detectedFile);
-    }
-
+    write(file, a);
+    write(file, b);
+    write(file, c);
+    write(file, d);
+    write(file, e);
+    write(file, f);
 
 
 
