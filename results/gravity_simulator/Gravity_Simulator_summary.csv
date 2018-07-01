@@ -1,0 +1,52 @@
+bitflips:;1007
+Total SDCs:;513
+Detected SDCs:;0
+Crashes:;7
+Simultaneous SDCs and Crashes:;0
+
+FaultModels Undetected SDCs:
+FaultModel ;#SDCs; percentage
+Single bit-flip;114;22.22222222222222
+Zero bit-flip;105;20.46783625730994
+Double bit-flip;101;19.68810916179337
+Random bit-flip;97;18.9083820662768
+LSB bit-flip;96;18.71345029239766
+
+FaultModels Detected SDCs:
+FaultModel ;#SDCs Detected; percentage
+
+FaultModels Crashes:
+FaultModel ;#Crashes; percentage
+LSB bit-flip;3;0.5847953216374269
+Random bit-flip;3;0.5847953216374269
+Double bit-flip;1;0.1949317738791423
+
+Variables that caused Undetected SDCs:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+100.0;168;168;G;gravity_simulator.cpp;7
+98.55072463768117;69;68;a;gravity_simulator.cpp;57
+100.0;34;34;e;gravity_simulator.cpp;114
+100.0;32;32;c;gravity_simulator.cpp;100
+100.0;31;31;b;gravity_simulator.cpp;93
+100.0;30;30;d;gravity_simulator.cpp;107
+93.75;32;30;a;gravity_simulator.cpp;86
+87.5;32;28;i;gravity_simulator.cpp;129
+66.66666666666666;39;26;gravity_force;gravity_simulator.cpp;62
+100.0;26;26;f;gravity_simulator.cpp;121
+44.73684210526316;38;17;file;gravity_simulator.cpp;128
+25.862068965517242;58;15;b;gravity_simulator.cpp;57
+11.11111111111111;18;2;y1;gravity_simulator.cpp;31
+3.508771929824561;57;2;distanceBetween;gravity_simulator.cpp;58
+11.76470588235294;17;2;y2;gravity_simulator.cpp;32
+5.88235294117647;17;1;x1;gravity_simulator.cpp;29
+5.0;20;1;a;gravity_simulator.cpp;52
+
+Variables that caused Detected SDCs:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+
+Variables that caused Crash:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+12.5;32;4;i;gravity_simulator.cpp;129
+50.0;2;1;_rtld_local_ro;rtld.c;202
+100.0;1;1;user_entry;../elf/dl-sysdep.c;89
+50.0;2;1;_dl_skip_args;rtld.c;84

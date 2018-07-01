@@ -1,0 +1,22 @@
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+95.23809523809523;42;40;maxIter;newton_raphson.hpp;46
+16.822429906542055;214;36;x0;newton_raphson_dup.cpp;30
+22.988505747126435;87;20;h;newton_raphson.hpp;36
+17.92452830188679;106;19;f;newton_raphson.hpp;34
+22.22222222222222;72;16;fDiff;newton_raphson.hpp;45
+18.571428571428573;70;13;f;newton_raphson.hpp;44
+17.741935483870968;62;11;df_x_too_small;newton_raphson.hpp;53
+18.64406779661017;59;11;currIter;newton_raphson.hpp;55
+20.754716981132077;53;11;found_root;newton_raphson.hpp;54
+10.975609756097562;82;9;x;newton_raphson.hpp;35
+17.647058823529413;51;9;x;newton_raphson.hpp;50
+8.695652173913043;69;6;f_x;newton_raphson.hpp;51
+14.285714285714285;42;6;h;newton_raphson.hpp;47
+8.47457627118644;59;5;eps;newton_raphson.hpp;46
+7.4074074074074066;54;4;delta;newton_raphson.hpp;46
+2.666666666666667;150;4;results1;newton_raphson_dup.cpp;43
+5.333333333333334;75;4;results;newton_raphson_dup.cpp;28
+1.5228426395939088;197;3;x;newton_raphson_dup.cpp;13
+1.8292682926829267;164;3;results2;newton_raphson_dup.cpp;45
+1.4285714285714286;70;1;df_x;newton_raphson.hpp;58
+11.11111111111111;9;1;mxcsr;../sysdeps/i386/fpu/fenv_private.h;444

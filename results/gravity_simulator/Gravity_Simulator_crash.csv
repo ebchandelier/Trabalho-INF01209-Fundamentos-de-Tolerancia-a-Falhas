@@ -1,0 +1,8 @@
+Variable Name;Variable File;Variable Line;Fault Injection Time(s);Injection Time Interval;Fault Model
+user_entry;../elf/dl-sysdep.c;89;1.1700525283813477;0-7;LSB bit-flip
+_dl_skip_args;rtld.c;84;0.7515182495117188;0-7;LSB bit-flip
+i;gravity_simulator.cpp;129;4.795920133590698;0-7;LSB bit-flip
+i;gravity_simulator.cpp;129;6.77386474609375;0-7;Random bit-flip
+i;gravity_simulator.cpp;129;7.051063776016235;0-7;Random bit-flip
+i;gravity_simulator.cpp;129;5.73269248008728;0-7;Random bit-flip
+_rtld_local_ro;rtld.c;202;0.48010706901550293;0-7;Double bit-flip
