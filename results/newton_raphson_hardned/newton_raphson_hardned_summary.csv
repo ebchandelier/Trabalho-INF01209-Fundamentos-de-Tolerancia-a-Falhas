@@ -1,0 +1,177 @@
+bitflips:;10543
+Total SDCs:;2416
+Detected SDCs:;1220
+Crashes:;505
+Simultaneous SDCs and Crashes:;0
+
+FaultModels Undetected SDCs:
+FaultModel ;#SDCs; percentage
+Random bit-flip;1196;49.503311258278146
+
+FaultModels Detected SDCs:
+FaultModel ;#SDCs Detected; percentage
+Random bit-flip;1220;50.496688741721854
+
+FaultModels Crashes:
+FaultModel ;#Crashes; percentage
+Random bit-flip;505;20.9023178807947
+
+Variables that caused Undetected SDCs:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+73.05699481865285;193;141;x0;newton_raphson_hardned.cpp;26
+78.91156462585033;147;116;x0;newton_raphson.cpp;32
+41.509433962264154;212;88;f;newton_raphson.hpp;34
+43.08510638297872;188;81;h;newton_raphson.hpp;36
+60.747663551401864;107;65;h;newton_raphson.hpp;47
+47.32824427480916;131;62;f;newton_raphson.hpp;44
+53.63636363636364;110;59;x;newton_raphson.hpp;50
+45.3125;128;58;fDiff;newton_raphson.hpp;45
+27.906976744186046;172;48;x;newton_raphson.hpp;35
+35.294117647058826;119;42;currIter;newton_raphson.hpp;55
+72.22222222222221;54;39;f;newton_raphson_hardned.hpp;54
+100.0;39;39;fDiff;newton_raphson_hardned.hpp;71
+37.5;104;39;found_root;newton_raphson.hpp;54
+33.33333333333333;114;38;df_x_too_small;newton_raphson.hpp;53
+26.717557251908396;131;35;f_x;newton_raphson.hpp;51
+71.11111111111111;45;32;h;newton_raphson_hardned.hpp;56
+77.41935483870968;31;24;f;newton_raphson_hardned.hpp;70
+51.162790697674424;43;22;f_copy;newton_raphson_hardned.hpp;57
+48.57142857142857;35;17;f_copy;newton_raphson_hardned.hpp;80
+64.0;25;16;sn;../sysdeps/ieee754/dbl-64/s_sin.c;221
+35.0;40;14;f_x;newton_raphson_hardned.hpp;86
+11.818181818181818;110;13;delta;newton_raphson.hpp;46
+31.25;32;10;a;newton_raphson_hardned.hpp;12
+37.03703703703704;27;10;x;newton_raphson_hardned.hpp;55
+5.405405405405405;185;10;x;newton_raphson.cpp;10
+8.0;100;8;eps;newton_raphson.hpp;46
+6.2015503875969;129;8;df_x;newton_raphson.hpp;58
+27.27272727272727;22;6;mxcsr;../sysdeps/i386/fpu/fenv_private.h;444
+75.0;8;6;cs;../sysdeps/ieee754/dbl-64/s_sin.c;247
+7.8125;64;5;__x;/usr/include/c++/7/bits/std_abs.h;70
+2.3255813953488373;215;5;user_entry;../elf/dl-sysdep.c;91
+80.0;5;4;sn;../sysdeps/ieee754/dbl-64/s_sin.c;247
+14.285714285714285;28;4;delta;newton_raphson_hardned.hpp;72
+3.508771929824561;114;4;x;newton_raphson_hardned.cpp;6
+50.0;8;4;ccs;../sysdeps/ieee754/dbl-64/s_sin.c;247
+10.526315789473683;38;4;df_x;newton_raphson_hardned.hpp;99
+12.5;24;3;found_root;newton_raphson_hardned.hpp;89
+12.0;25;3;eps;newton_raphson_hardned.hpp;72
+8.571428571428571;35;3;df_x_too_small;newton_raphson_hardned.hpp;88
+1.8181818181818181;165;3;_dl_skip_args;rtld.c;84
+100.0;2;2;_IO_strn_jumps;vsnprintf.c;67
+50.0;4;2;cs;../sysdeps/ieee754/dbl-64/s_sin.c;160
+1.3333333333333335;75;1;results;newton_raphson_dup.cpp;28
+0.591715976331361;169;1;_rtld_global_ro;rtld.c;259
+2.631578947368421;38;1;b;newton_raphson_hardned.hpp;12
+0.628930817610063;159;1;__GI__dl_argv;rtld.c;83
+
+Variables that caused Detected SDCs:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+80.37383177570094;214;172;x0;newton_raphson_dup.cpp;30
+32.97872340425532;188;62;h;newton_raphson.hpp;36
+42.10526315789473;114;48;df_x_too_small;newton_raphson.hpp;53
+39.49579831932773;119;47;currIter;newton_raphson.hpp;55
+28.666666666666668;150;43;results1;newton_raphson_dup.cpp;43
+38.18181818181819;110;42;x;newton_raphson.hpp;50
+100.0;42;42;h;newton_raphson_hardned.hpp;73
+100.0;42;42;df_x_too_small_copy;newton_raphson_hardned.hpp;92
+100.0;39;39;currIter;newton_raphson_hardned.hpp;90
+35.57692307692308;104;37;found_root;newton_raphson.hpp;54
+31.775700934579437;107;34;h;newton_raphson.hpp;47
+100.0;34;34;h_copy;newton_raphson_hardned.hpp;83
+97.05882352941177;34;33;x;newton_raphson_hardned.hpp;76
+100.0;32;32;currIter_copy;newton_raphson_hardned.hpp;94
+88.57142857142857;35;31;df_x_too_small;newton_raphson_hardned.hpp;88
+96.875;32;31;found_root_copy;newton_raphson_hardned.hpp;93
+78.94736842105263;38;30;b;newton_raphson_hardned.hpp;12
+22.137404580152673;131;29;f_x;newton_raphson.hpp;51
+16.27906976744186;172;28;x;newton_raphson.hpp;35
+13.19796954314721;197;26;x;newton_raphson_dup.cpp;13
+92.85714285714286;28;26;x_copy;newton_raphson_hardned.hpp;77
+87.5;24;21;found_root;newton_raphson_hardned.hpp;89
+11.585365853658537;164;19;results2;newton_raphson_dup.cpp;45
+24.0;75;18;results;newton_raphson_dup.cpp;28
+51.42857142857142;35;18;f_copy;newton_raphson_hardned.hpp;80
+56.25;32;18;a;newton_raphson_hardned.hpp;12
+17.0;100;17;eps;newton_raphson.hpp;46
+100.0;16;16;size;newton_raphson_dup.cpp;67
+6.329113924050633;237;15;result;newton_raphson_dup.cpp;32
+6.914893617021277;188;13;PI;newton_raphson_dup.cpp;16
+100.0;12;12;i;newton_raphson_dup.cpp;68
+10.909090909090908;110;12;delta;newton_raphson.hpp;46
+5.347593582887701;187;10;A;newton_raphson_dup.cpp;15
+36.0;25;9;sn;../sysdeps/ieee754/dbl-64/s_sin.c;221
+6.2015503875969;129;8;df_x;newton_raphson.hpp;58
+100.0;8;8;value;newton_raphson_dup.cpp;83
+29.629629629629626;27;8;x;newton_raphson_hardned.hpp;55
+17.391304347826086;46;8;x_copy;newton_raphson_hardned.hpp;58
+22.58064516129032;31;7;f;newton_raphson_hardned.hpp;70
+15.555555555555555;45;7;h;newton_raphson_hardned.hpp;56
+15.0;40;6;f_x;newton_raphson_hardned.hpp;86
+3.64963503649635;137;5;debug;newton_raphson.hpp;48
+3.8461538461538463;130;5;x0;newton_raphson.hpp;44
+100.0;4;4;__for_end;newton_raphson_dup.cpp;0
+50.0;8;4;ccs;../sysdeps/ieee754/dbl-64/s_sin.c;247
+6.25;64;4;__x;/usr/include/c++/7/bits/std_abs.h;70
+100.0;3;3;__p;/usr/include/c++/7/ext/new_allocator.h;116
+100.0;3;3;set;../sysdeps/unix/sysv/linux/raise.c;39
+100.0;3;3;__for_begin;newton_raphson_dup.cpp;0
+12.0;25;3;h_copy;newton_raphson_hardned.hpp;59
+7.894736842105263;38;3;df_x;newton_raphson_hardned.hpp;99
+100.0;2;2;__n;/usr/include/c++/7/bits/stl_vector.h;176
+100.0;2;2;lock;abort.c;46
+50.0;4;2;cs;../sysdeps/ieee754/dbl-64/s_sin.c;160
+0.9433962264150944;212;2;f;newton_raphson.hpp;34
+25.0;8;2;cs;../sysdeps/ieee754/dbl-64/s_sin.c;247
+100.0;2;2;this;newton_raphson_dup.cpp;0
+100.0;2;2;__p;/usr/include/c++/7/bits/stl_vector.h;176
+100.0;2;2;__GI___abort_msg;abort.c;38
+1.0101010101010102;99;1;maxIter;newton_raphson.hpp;46
+100.0;1;1;stage;abort.c;43
+4.545454545454546;22;1;mxcsr;../sysdeps/i386/fpu/fenv_private.h;444
+100.0;1;1;__p;/usr/include/c++/7/bits/alloc_traits.h;461
+20.0;5;1;sn;../sysdeps/ieee754/dbl-64/s_sin.c;247
+33.33333333333333;3;1;x;../sysdeps/ieee754/dbl-64/s_sin.c;541
+100.0;1;1;ap;../sysdeps/posix/libc_fatal.c;69
+100.0;1;1;__for_range;newton_raphson_dup.cpp;0
+1.8518518518518516;54;1;f;newton_raphson_hardned.hpp;54
+
+Variables that caused Crash:
+PVF ;#flips ;#SDCs ;Var name ;file ;line number
+96.96969696969697;99;96;maxIter;newton_raphson.hpp;46
+26.94300518134715;193;52;x0;newton_raphson_hardned.cpp;26
+24.848484848484848;165;41;_dl_skip_args;rtld.c;84
+18.13953488372093;215;39;user_entry;../elf/dl-sysdep.c;91
+16.822429906542055;214;36;x0;newton_raphson_dup.cpp;30
+21.08843537414966;147;31;x0;newton_raphson.cpp;32
+96.7741935483871;31;30;maxIter;newton_raphson_hardned.hpp;72
+10.638297872340425;188;20;h;newton_raphson.hpp;36
+8.962264150943396;212;19;f;newton_raphson.hpp;34
+12.5;128;16;fDiff;newton_raphson.hpp;45
+9.923664122137405;131;13;f;newton_raphson.hpp;44
+9.649122807017543;114;11;df_x_too_small;newton_raphson.hpp;53
+9.243697478991598;119;11;currIter;newton_raphson.hpp;55
+10.576923076923077;104;11;found_root;newton_raphson.hpp;54
+5.232558139534884;172;9;x;newton_raphson.hpp;35
+8.181818181818182;110;9;x;newton_raphson.hpp;50
+4.827586206896552;145;7;_rtld_global;rtld.c;231
+4.580152671755725;131;6;f_x;newton_raphson.hpp;51
+5.607476635514018;107;6;h;newton_raphson.hpp;47
+3.7735849056603774;159;6;__GI__dl_argv;rtld.c;83
+5.0;100;5;eps;newton_raphson.hpp;46
+3.6363636363636362;110;4;delta;newton_raphson.hpp;46
+2.666666666666667;150;4;results1;newton_raphson_dup.cpp;43
+5.333333333333334;75;4;results;newton_raphson_dup.cpp;28
+1.5228426395939088;197;3;x;newton_raphson_dup.cpp;13
+1.8292682926829267;164;3;results2;newton_raphson_dup.cpp;45
+1.7751479289940828;169;3;_rtld_global_ro;rtld.c;259
+0.7751937984496124;129;1;df_x;newton_raphson.hpp;58
+4.545454545454546;22;1;mxcsr;../sysdeps/i386/fpu/fenv_private.h;444
+0.5747126436781609;174;1;tls_init_tp_called;rtld.c;676
+0.6024096385542169;166;1;load_time;rtld.c;307
+0.7299270072992701;137;1;any_debug;rtld.c;2319
+0.8771929824561403;114;1;x;newton_raphson_hardned.cpp;6
+2.941176470588235;34;1;x;newton_raphson_hardned.hpp;76
+50.0;2;1;reloc_addr;../sysdeps/x86_64/dl-machine.h;290
+0.5291005291005291;189;1;PI;newton_raphson.cpp;13
+100.0;1;1;runp;dl-deps.c;162
