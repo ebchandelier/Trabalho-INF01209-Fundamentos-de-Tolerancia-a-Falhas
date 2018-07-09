@@ -98,7 +98,7 @@ def getSDCCrashInfo(dirName, fname):
     return (sdc, crash)
 
 def getFlipInfo(dirName, fname):
-    fp = open(dirName+"/"+fname, "r", errors="ignore")
+    fp = open(dirName+"/"+fname, "r")
     content = fp.read()
     flip = False
     if re.search("Fault Injection Successful",content):
