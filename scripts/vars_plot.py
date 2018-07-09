@@ -14,7 +14,6 @@ def vars_plot(in_file, out_img, title):
 	y_pos = np.arange(len(labels))
 	pvfs = df['PVF ']
 
-	plt.rcdefaults()
 	fig, ax = plt.subplots()
 	ax.barh(y_pos, pvfs, color='red', ecolor='black')
 	ax.set_yticks(y_pos)
@@ -23,7 +22,9 @@ def vars_plot(in_file, out_img, title):
 	ax.set_xlabel('PVF')
 	ax.set_title(title)
 	plt.tight_layout()
+	fig.set_size_inches(6.5, 9)
 	plt.savefig(out_img)
+
 
 if(__name__ == "__main__"):
 	if(len(sys.argv) != 4):
